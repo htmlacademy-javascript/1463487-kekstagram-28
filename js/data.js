@@ -46,5 +46,5 @@ const getPictures = ()=>
   Array.from({length:PICTURE_COUNT},(_,pictureIndex)=>
     createPicture(pictureIndex + 1)
   );
-getPictures();
-import(getPictures);
+const Picture = getPictures();
+export {Picture};
